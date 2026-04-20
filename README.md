@@ -1,5 +1,6 @@
 # Hospital Intelligence Platform
-
+ https://hospital-intelligence-platform-cn59az6anywwfs5diwgf4h.streamlit.app 
+ 
 ## Overview
 End-to-end healthcare analytics platform built with Python, PostgreSQL, and Tableau. 
 Includes data pipeline, KPI analysis, and ML-powered readmission risk predictor.
