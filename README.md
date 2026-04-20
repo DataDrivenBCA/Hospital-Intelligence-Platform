@@ -8,7 +8,7 @@ Includes data pipeline, KPI analysis, and ML-powered readmission risk predictor.
 - Python (pandas, scikit-learn, sqlalchemy, streamlit)
 - PostgreSQL (star schema data warehouse)
 - Tableau Public (interactive dashboard)
-- Google Colab / Jupyter Notebooks
+- Jupyter Notebooks
 
 ## Project Structure
 01_data_generation — data cleaning and feature engineering
