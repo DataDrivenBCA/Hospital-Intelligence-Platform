@@ -2,20 +2,18 @@ import streamlit as st
 import pickle
 import pandas as pd
 
-# load the saved model
-with open('/Users/bulbulgupta/Documents/hospital_intelligence/scripts/model_small.pkl', 'rb') as f:
+with open('model_small.pkl', 'rb') as f:
+    model = pickle.load(f)
 
 st.title("Hospital Readmission Risk Predictor")
 st.write("Enter patient details to predict readmission risk")
 
-# input fields
 age = st.slider("Patient Age", 1, 100, 50)
 length_of_stay = st.slider("Length of Stay (days)", 1, 30, 10)
 billing_amount = st.number_input("Billing Amount ($)", min_value=1000, max_value=100000, value=25000)
 medical_condition = st.selectbox("Medical Condition", ["Arthritis", "Asthma", "Cancer", "Diabetes", "Hypertension", "Obesity"])
 admission_type = st.selectbox("Admission Type", ["Elective", "Emergency", "Urgent"])
 
-# predict button
 if st.button("Predict Readmission Risk"):
     input_data = pd.DataFrame({
         'age': [age],
