@@ -26,7 +26,7 @@ app.py — Streamlit web application
 - Tableau dashboard published online
 
 ## Dashboard
-[View on Tableau Public](your tableau link here)
+[View on Tableau Public]([your tableau link here](https://public.tableau.com/app/profile/bulbul.kumari/viz/Hospital_Dashboard_17760084121470/Dashboard1))
 
 ## Limitations & Future Work
 - Model recall is low (3-4%) due to class imbalance
